@@ -29,8 +29,7 @@ main {
 h1,
 p {
     color: #190361;
-    text-align: center;  
-     
+    text-align: center;
 }
 
 h1 {
@@ -39,33 +38,43 @@ h1 {
     font-weight: 700;
     font-size: 2.4rem;
     margin: 4.8rem 8.1rem 1.3rem;
-
 }
 
 p {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    
 
 }
-
-img {
+#fortuneCookie {
+    background-image: url(./img/fortune-cookie.png);
+    width: 300px;
+    height: 200px;
     margin: 2.0rem 6.4rem 6.4rem;
 }
+
+#openedCookie {
+    background-image: url(./img/opened-cookie.png);
+    width: 300px;
+    height: 200px;
+    margin: 2.0rem 6.4rem 6.4rem;
+}
+
 
 .hide {
     display: none;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
