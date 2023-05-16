@@ -29,7 +29,7 @@ main {
     border-radius: 5px;
 }
 
-h1,
+h1, 
 p {
     color: #190361;
     text-align: center;
@@ -50,6 +50,15 @@ p, #btnTryAgain {
 
 }
 
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+    background-color: #dde7e7;
+    
+}
+
 button{
     width: 17.4rem;
     height: 5.2rem;
@@ -61,9 +70,7 @@ button{
     padding: 1.6rem;
     margin: 0 auto 4.8rem;
     cursor: pointer;
-    
-    
-       
+               
 }
 
 button:hover {

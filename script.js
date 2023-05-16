@@ -1,5 +1,8 @@
 const screen1 = document.querySelector(".screen1")
 const screen2 = document.querySelector(".screen2")
+const fortuneCookie  = document.querySelector("#fortuneCookie")
+const btnTryAgain = document.querySelector("#btnTryAgain")
+
 
 const phrase = [
     "A vida trará coisas boas se tiver paciência.",
@@ -18,3 +21,41 @@ const phrase = [
     "O bom-senso vale mais do que muito conhecimento.",
     "Quem quer colher rosas tem de estar preparado para suportar os espinhos."
 ]
+
+fortuneCookie.addEventListener('click', handleTryClick)
+btnTryAgain.addEventListener('click', handleResetClick)
+document.addEventListener('keydown', function(e) {
+    if(e.key == 'Enter' && screen2.classList.contains('hide')){
+        handleTryClick()
+    } else if(e.key == 'Enter' && screen1.classList.contains('hide')){
+        handleResetClick()
+        }
+
+        
+    }
+)
+
+
+function handleTryClick(event) {
+    toggleScreen()
+    pickFortune()
+    
+}
+
+function handleResetClick() {
+toggleScreen()
+}
+
+
+function pickFortune() {
+    let allPhrase = phrase.length
+    let randomNumber = Math.floor(Math.random() * allPhrase)  
+    screen2.querySelector("h2").innerText = `${phrase[randomNumber]}`
+}
+
+
+function toggleScreen() {
+    screen2.classList.toggle("hide")
+    screen1.classList.toggle("hide")
+}
+
