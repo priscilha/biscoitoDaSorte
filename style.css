@@ -10,7 +10,9 @@
 
 body {
     font-size: 1.6rem;
-    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    background: linear-gradient(45deg, #190361 0%, #ff0c04 100%);
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
     display: grid;
     place-items: center;
     height: 100vh;
@@ -22,6 +24,48 @@ main {
     background: #FFFFFF;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
-    
+
 }
 
+h1,
+p {
+    color: #190361;
+    text-align: center;
+   
+   
+  
+}
+
+h1 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 4.8rem 8.1rem 1.3rem;
+
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+
+}
+
+img {
+    margin: 2.0rem 6.4rem 6.4rem;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
