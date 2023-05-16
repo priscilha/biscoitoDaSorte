@@ -10,12 +10,15 @@
 
 body {
     font-size: 1.6rem;
-    background: linear-gradient(45deg, #190361 0%, #ff0c04 100%);
+    background: linear-gradient(45deg, #190361 0%, #930702 100%);
     animation: gradient 5s ease infinite;
     background-size: 200% 200%;
     display: grid;
     place-items: center;
     height: 100vh;
+    text-align: center;
+    
+   
 
 }
 
@@ -30,6 +33,7 @@ h1,
 p {
     color: #190361;
     text-align: center;
+    font-weight: 400;
 }
 
 h1 {
@@ -40,12 +44,32 @@ h1 {
     margin: 4.8rem 8.1rem 1.3rem;
 }
 
-p {
+p, #btnTryAgain {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
+        font-size: 1.5rem;
 
 }
+
+button{
+    width: 17.4rem;
+    height: 5.2rem;
+    background-color: #9350ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 1.6rem;
+    margin: 0 auto 4.8rem;
+    cursor: pointer;
+    
+    
+       
+}
+
+button:hover {
+    background-color: #5807db;
+}
+
 #fortuneCookie {
     background-image: url(./img/fortune-cookie.png);
     width: 300px;
@@ -63,7 +87,7 @@ p {
     background-image: url(./img/opened-cookie.png);
     width: 300px;
     height: 200px;
-    margin: 2.0rem 6.4rem 6.4rem;
+    margin: 2.0rem 6.4rem;
 }
 
 
