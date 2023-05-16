@@ -10,4 +10,18 @@
 
 body {
     font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
 }
+
+main {
+    width: min(42.8rem, 90%);
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    
+}
+
